@@ -1,0 +1,400 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Process_Templet" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1482,5091" sap2010:WorkflowViewState.IdRef="Process_Templet_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Process_Templet" sap:VirtualizedContainerService.HintSize="1492,5026" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1430,4915" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1396,4828" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1334,4717" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="GB-25102k23 1.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="current" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1300,4448" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1238,4337" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\HariSivaSaiKumarMada\Documents\Equipment Sales.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1204,4068" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Home | Salesforce" sap:VirtualizedContainerService.HintSize="1142,3957" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V2">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1108,3740" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'App Launcher'" sap:VirtualizedContainerService.HintSize="1046,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/page/home" CvElementArea="27, 235, 32, 31" CvType="Icon" DesignTimeRectangle="32, 239, 23, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'App Launcher'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/oneAppNavContainer:appnav/auraIf/oneAppnav:oneAppNav' tag='ONE-APPNAV' /&gt;&lt;webctrl tag='BUTTON' aaname='App Launcher' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/oneAppNavContainer:appnav/auraIf/oneAppnav:oneAppNav' tag='ONE-APPNAV' /&gt;&lt;webctrl tag='BUTTON' aaname='App Launcher' type='' class='slds-button slds-show' check:text='App Launcher' /&gt;" Guid="c4041081-604f-47fb-8fbc-6bf41ba4c95d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC6SURBVEhL7ZNBCsQgDEXn0AqewCMoXk4QXHgA16ZkxoJ/FWiwXUw/uHqBl7T8D92YP5HVWimEQM45SilRKYXGGJPqOch40FpLxpjvizFS731SPQcZb3QO8vPeU2ttUj0HGZ++DvOm62ZaDjL+xnw6b8SDOedJftFykPHP5E349HWjM1oOst15Tvb27CoHmbZHEgeZtkcSB5m2RxIH2e48J3t7dpWDTNsjiYNM2yOJg0zbI4mDbHdulBEdWa8xQc2OfR0AAAAASUVORK5CYII=" InformativeScreenshot="bf834ec1d5819f2cbff4d0646800a583.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="75, 241, 114, 17" CvTextArgument="Ambient Sales" CvType="Text" DesignTimeRectangle="76, 239, 113, 23" ElementType="Text" FriendlyName="'Ambient Sales'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/oneAppNavContainer:appnav/auraIf/oneAppnav:oneAppNav' tag='ONE-APPNAV' /&gt;&lt;webctrl class='slds-truncate' tag='SPAN' aaname='Ambient Sales' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/oneAppNavContainer:appnav/auraIf/oneAppnav:oneAppNav' tag='ONE-APPNAV' /&gt;&lt;webctrl class='slds-truncate' tag='SPAN' aaname='Ambient Sales' type='' check:text='Ambient Sales' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'App Launcher'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1046,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Text="Projects" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/page/home" CvTextArea="73, 331, 139, 13" CvTextArgument="Search apps and items..." CvType="Text" DesignTimeRectangle="41, 322, 296, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT input-349'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/oneAppLauncherMenu' tag='ONE-APP-LAUNCHER-MENU' /&gt;&lt;webctrl tag='INPUT' aaname='Search apps and items...' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/oneAppLauncherMenu' tag='ONE-APP-LAUNCHER-MENU' /&gt;&lt;webctrl tag='INPUT' aaname='Search apps and items...' type='search' class='slds-input' /&gt;" Guid="ff4d738b-f2c0-4e58-a6ca-8d46916d5e04" InformativeScreenshot="ebbe042811d6cbb751e02c7f3fd6acd8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="39, 293, 101, 18" CvTextArgument="App Launcher" CvType="Text" DesignTimeRectangle="41, 290, 296, 20" ElementType="Text" FriendlyName="'App Launcher'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/auraIf/auraHtml' tag='H2' aaname='App Launcher' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/auraIf/auraHtml' tag='H2' aaname='App Launcher' type='' class='slds-text-heading_small title' check:text='App Launcher' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'App Launcher'" sap:VirtualizedContainerService.HintSize="1046,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/page/home" CvTextArea="40, 450, 50, 16" CvTextArgument="Projects" CvType="Text" DesignTimeRectangle="41, 445, 240, 22" DesignTimeScaleFactor="1" FriendlyName="'Projects'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/oneAppLauncherMenu' tag='ONE-APP-LAUNCHER-MENU' /&gt;&lt;webctrl class='slds-size_small' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/oneAppLauncherMenu' tag='ONE-APP-LAUNCHER-MENU' /&gt;&lt;webctrl class='slds-size_small' tag='DIV' type='' aaname='' check:text='Projects' /&gt;" Guid="d624d67f-acb6-45b3-a916-9984d4140525" InformativeScreenshot="bbd2339ce2ba104cd11c75e53d0a59e8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target CvTextArea="39, 293, 101, 18" CvTextArgument="App Launcher" CvType="Text" DesignTimeRectangle="41, 290, 296, 20" ElementType="Text" FriendlyName="'App Launcher'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/auraIf/auraHtml' tag='H2' aaname='App Launcher' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/auraIf/auraHtml' tag='H2' aaname='App Launcher' type='' class='slds-text-heading_small title' check:text='App Launcher' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NCheckState DisplayName="Check App State 'Recently Viewed'" sap:VirtualizedContainerService.HintSize="1046,491" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Timeout="5" Version="V3">
+                                      <uix:NCheckState.IfExists>
+                                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,274" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[current.Sheet(&quot;Proposal Template&quot;).Cell(&quot;O2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[&quot;Pass&quot;]" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfExists>
+                                      <uix:NCheckState.IfNotExists>
+                                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,274" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[current.Sheet(&quot;Proposal Template&quot;).Cell(&quot;O2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_9" Value="[&quot;Fail&quot;]" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfNotExists>
+                                      <uix:NCheckState.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Project__c/list?filterName=__Recent" DesignTimeRectangle="77, 306, 143, 23" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Recently Viewed'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewPicker:listViewPicker/uiOutputText:triggerLinkText/auraHtml:span' tag='SPAN' aaname='Recently Viewed' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewPicker:listViewPicker/uiOutputText:triggerLinkText/auraHtml:span' tag='SPAN' aaname='Recently Viewed' type='' class='triggerLinkText selectedListView slds-page-header__title slds-truncate slds-p-right--xx-small uiOutputText' check:text='Recently Viewed' /&gt;" Guid="fa3b18a5-361c-4c49-8609-202137d604de" InformativeScreenshot="681f97ff3712529b4c867ab3d3b50983.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recently Viewed | Projects | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target DesignTimeRectangle="24, 187, 200, 40" FriendlyName="'Ambient Sales'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/oneHeader:header/auraIf/auraHtml' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/oneHeader:header/auraIf/auraHtml' tag='DIV' type='' class='slds-global-header__logo' aaname='' check:text='Ambient Sales' /&gt;" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NCheckState.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NCheckState>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Projects'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1046,218" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Project__c/list?filterName=__Recent" DesignTimeRectangle="1428, 332, 240, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT input-415'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewManagerSearchBar:searchBar' tag='FORCE-LIST-VIEW-MANAGER-SEARCH-BAR' /&gt;&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewManagerSearchBar:searchBar' tag='FORCE-LIST-VIEW-MANAGER-SEARCH-BAR' /&gt;&lt;webctrl tag='INPUT' type='search' class='slds-input' aaname='Search this list...' /&gt;" Guid="2ffa0caa-148b-4b6b-b3e6-44e9116b8b9b" InformativeScreenshot="184a3c7d15252929af423ef98dfae204.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recently Viewed | Projects | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target DesignTimeRectangle="77, 291, 49, 17" ElementType="Text" FriendlyName="'Projects'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/lstBreadcrumbs:breadCrumbs' tag='LST-BREADCRUMBS' /&gt;&lt;webctrl tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/lstBreadcrumbs:breadCrumbs' tag='LST-BREADCRUMBS' /&gt;&lt;webctrl tag='SPAN' type='' class='slds-var-p-right_x-small' aaname='Projects' check:innerText='Projects' /&gt;" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.Text>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <Literal x:TypeArguments="x:String" Value="" />
+                                        </InArgument>
+                                      </uix:NTypeInto.Text>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'test proj uat ui path'" sap:VirtualizedContainerService.HintSize="1046,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Project__c/list?filterName=__Recent" DesignTimeRectangle="89, 412, 113, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'test proj uat ui path'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' aaname='test proj uat ui path' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' aaname='test proj uat ui path' class='slds-truncate outputLookupLink slds-truncate outputLookupLink-a1PO800000jBmYrMAK-1821:0 forceOutputLookup' check:text='test proj uat ui path' /&gt;" Guid="edcf3b30-53d6-45e5-86f9-c2f144894518" InformativeScreenshot="c5bab6459b171674672cfa863fac45d0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recently Viewed | Projects | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target DesignTimeRectangle="77, 306, 143, 23" ElementType="Text" FriendlyName="'Recently Viewed'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewPicker:listViewPicker/uiOutputText:triggerLinkText/auraHtml:span' tag='SPAN' aaname='Recently Viewed' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewPicker:listViewPicker/uiOutputText:triggerLinkText/auraHtml:span' tag='SPAN' aaname='Recently Viewed' type='' class='triggerLinkText selectedListView slds-page-header__title slds-truncate slds-p-right--xx-small uiOutputText' check:text='Recently Viewed' /&gt;" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NCheckState DisplayName="Check App State 'Details'" sap:VirtualizedContainerService.HintSize="1046,531" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Timeout="5" Version="V3">
+                                      <uix:NCheckState.IfExists>
+                                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,274" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[current.Sheet(&quot;Proposal Template&quot;).Cell(&quot;O3&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[&quot;Pass&quot;]" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfExists>
+                                      <uix:NCheckState.IfNotExists>
+                                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,274" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[current.Sheet(&quot;Proposal Template&quot;).Cell(&quot;O3&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_10" Value="[&quot;Fail&quot;]" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfNotExists>
+                                      <uix:NCheckState.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/r/Project__c/a1PO800000jBmYrMAK/view" DesignTimeRectangle="45, 636, 51, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Details'" FullSelectorArgument="&lt;webctrl idx='3' sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl aria-role='tab' tag='A' aaname='Details' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl aria-role='tab' tag='A' aaname='Details' type='' class='slds-tabs_default__link' check:text='Details' /&gt;" Guid="d8dc59f4-d4c6-482e-b35a-a5b72497b2bf" InformativeScreenshot="4b3e98006ef0bd04f7d3fc07ee18f30e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='test proj uat ui path | Project | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target DesignTimeRectangle="77, 287, 40, 17" FriendlyName="'Project'" FullSelectorArgument="&lt;webctrl idx='3' sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl tag='RECORDS-ENTITY-LABEL' aaname='Project' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl tag='RECORDS-ENTITY-LABEL' aaname='Project' type='' class='' check:text='Project' /&gt;" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NCheckState.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NCheckState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proposals &amp; Quotes'" sap:VirtualizedContainerService.HintSize="1046,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/r/Project__c/a1PO800000jBmYrMAK/view" DesignTimeRectangle="1072, 636, 141, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Proposals &amp; Quotes'" FullSelectorArgument="&lt;webctrl idx='3' sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl aaname='Proposals &amp;amp; Quotes' aria-role='tab' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl aaname='Proposals &amp;amp; Quotes' aria-role='tab' tag='A' type='' class='slds-tabs_default__link' check:text='Proposals &amp;amp; Quotes' /&gt;" Guid="3ed207cc-6a89-4de8-ad84-e10a077ace78" InformativeScreenshot="4e78acaf6c19df1f756db5ed3367309b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* | Project | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target DesignTimeRectangle="77, 287, 40, 17" FriendlyName="'Project'" FullSelectorArgument="&lt;webctrl idx='3' sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl tag='RECORDS-ENTITY-LABEL' aaname='Project' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl tag='RECORDS-ENTITY-LABEL' aaname='Project' type='' class='' check:text='Project' /&gt;" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NCheckState DisplayName="Check App State 'Proposal Template'" sap:VirtualizedContainerService.HintSize="1046,491" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Timeout="5" Version="V3">
+                                      <uix:NCheckState.IfExists>
+                                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,272" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Proposal Template&quot;).Cell(&quot;O5&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[&quot;Pass&quot;]" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfExists>
+                                      <uix:NCheckState.IfNotExists>
+                                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,274" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Proposal Template&quot;).Cell(&quot;O5&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[&quot;Fail&quot;]" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfNotExists>
+                                      <uix:NCheckState.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/r/Project__c/a1PO800000jBmYrMAK/view" DesignTimeRectangle="1034, 596, 122, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Proposal Template'" FullSelectorArgument="&lt;webctrl idx='3' sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl aaname='Proposal Template' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl aaname='Proposal Template' tag='SPAN' type='' class='slds-truncate slds-m-right--xx-small' check:innerText='Proposal Template' /&gt;" Guid="2f5949a2-5d27-4dec-a30e-07e5cbc48c06" InformativeScreenshot="a441a1643bce21c82b5d760c89a2d35a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='test proj uat ui path | Project | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target DesignTimeRectangle="1070, 536, 149, 40" ElementType="Text" FriendlyName="'Proposals &amp; Quotes'" FullSelectorArgument="&lt;webctrl idx='3' sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl aaname='Proposals &amp;amp; Quotes' aria-role='tab' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl aaname='Proposals &amp;amp; Quotes' aria-role='tab' tag='A' type='' class='slds-tabs_default__link' check:text='Proposals &amp;amp; Quotes' /&gt;" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NCheckState.Target>
+                                    </uix:NCheckState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proposal Template'" sap:VirtualizedContainerService.HintSize="1046,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/r/Project__c/a1PO800000jBmYrMAK/view" DesignTimeRectangle="1038, 588, 132, 29" DesignTimeScaleFactor="1" FriendlyName="'Q-05791Open Q-05791'" FullSelectorArgument="&lt;webctrl idx='3' sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl aria-label='Proposal Template' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl aria-label='Proposal Template' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='' check:text='Q-05791Open Q-05791 Preview' /&gt;" Guid="98508577-09a4-4f4f-bedc-f3b7bbdf1804" InformativeScreenshot="31e2d1d2c17ce482ee5c69f1c0746229.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* | Project | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target DesignTimeRectangle="1034, 496, 122, 18" ElementType="Text" FriendlyName="'Proposal Template'" FullSelectorArgument="&lt;webctrl idx='3' sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl aaname='Proposal Template' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl aaname='Proposal Template' tag='SPAN' type='' class='slds-truncate slds-m-right--xx-small' check:text='Proposal Template' /&gt;" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NCheckState DisplayName="Check App State 'Details'" sap:VirtualizedContainerService.HintSize="1046,491" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Timeout="5" Version="V3">
+                                      <uix:NCheckState.IfExists>
+                                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,274" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Proposal Template&quot;).Cell(&quot;O6&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_11" Value="[&quot;Pass&quot;]" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfExists>
+                                      <uix:NCheckState.IfNotExists>
+                                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,274" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Proposal Template&quot;).Cell(&quot;O6&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_12" Value="[&quot;Fail&quot;]" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfNotExists>
+                                      <uix:NCheckState.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/r/SBQQ__Quote__c/a10O800000HJxnNIAT/view" DesignTimeRectangle="45, 494, 51, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Details'" FullSelectorArgument="&lt;webctrl idx='4' sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl aria-role='tab' tag='A' aaname='Details' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl aria-role='tab' tag='A' aaname='Details' type='' class='slds-tabs_default__link' check:text='Details' /&gt;" Guid="e7ec5c35-532f-403c-8234-de4e9bd5d489" InformativeScreenshot="f9a25d92e784724d9cec245052fc56f2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* | Proposal and Quotes | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target DesignTimeRectangle="77, 287, 120, 17" FriendlyName="'Proposal and Quotes'" FullSelectorArgument="&lt;webctrl idx='4' sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl tag='RECORDS-ENTITY-LABEL' aaname='Proposal and Quotes' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2' tag='ONE-RECORD-HOME-FLEXIPAGE2' /&gt;&lt;webctrl tag='RECORDS-ENTITY-LABEL' aaname='Proposal and Quotes' type='' class='' check:text='Proposal and Quotes' /&gt;" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NCheckState.Target>
+                                    </uix:NCheckState>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVFhH7ZZBSBRRGMdHYolFJCJEJEQkJERCPISHCAlP0qGT5w7RwUNIhESEiAfxGJ46ONIpwmOIiHiQiAiRiOgUb6JTePLQIUQ6TL//25ndt85jXGmc7eDht2/3zbfv+79vvu+9L4jjuKOdnAv4fwUEq+ZCsBp1wmW4BFXN+Wz/hYwAHMkxDs0I431YgHl+TzHe0LNmu6gfrkEfNl1BGJ1KZJOA2q7NAIs9hm8QNzB/GL/CDAzCTZiFDfgMb+ERjEKnu24exwREPfASHMcZDhDzjvHLsfmUXbgHen1d0JugaGWiUxfAw4ssTJjNId99C58GCXwA0/CCNcFG7jawyUYuuQKUbOvgW7AoDCzCdbAiXAEKP+H1/rFoXkG/T8DvxKAMnkHFFXAFlM0+4+IJ7evotQKUFPxQaX2oG5TD3USADf8y/EoelMWTgA8dPiqXI+dBWcxIAPUffXImy2RcAqokRDt2/wO/3Qgw3HJeg7PmKVTSV/AzmSwJ84axzxYAXyqgCvAYFo35zrgEw+m1nZbhMHysGRVIaHS3vMbxCuNzmASVfPNlpAm4hSHGBd0Hob3YuP2MDjj1GDpp865jexqqs5kAdUJSvAd+Bw32YQt2QD3Ce5gDdVRV15mPuoD6hKIRqv+jRGp3+kn9gRJqDIZATvU6vbv1kRHgwiLqZLSbbJXUzo5NGIeK7/+tkC+ATCWR1KjcAXU126BkXYOHoPd7YpjzyBWQghOVqsJ6FVF0vzaT1fO1FOY8WhJwlpwLaLOAuOMveA1Of+TuOKQAAAAASUVORK5CYII=" InformativeScreenshot="dd4b2aa49328201ec5697fba4dd8a862.jpg" Selector="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" Title="Home | Salesforce" Url="https://aellc--uat.sandbox.lightning.force.com/lightning/page/home" />
+                              </uix:NApplicationCard.TargetApp>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>

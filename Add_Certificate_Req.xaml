@@ -1,0 +1,361 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Add_Certificate_Req" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1390,3826" sap2010:WorkflowViewState.IdRef="Add_Certificate_Req_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Salesforce.ConnectionService</x:String>
+      <x:String>UiPath.Salesforce.Models</x:String>
+      <x:String>UiPath.Salesforce.Telemetry</x:String>
+      <x:String>UiPath.Salesforce.Activities</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Entity</x:String>
+      <x:String>UiPath.IntegrationService.Infrastructure.Descriptor</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Enums</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Telemetry</x:String>
+      <x:String>UiPath.BAF.Infrastructure</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Connection</x:String>
+      <x:String>UiPath.Salesforce.IntegrationService.Activities</x:String>
+      <x:String>UiPath.IntegrationCore.Activities</x:String>
+      <x:String>UiPath.BAF.Activities</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Contracts</x:String>
+      <x:String>UiPath.SalesforceMarketingCloud.IntegrationService.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Infrastructure.Triggers</x:String>
+      <x:String>UiPath.IntegrationService.Infrastructure.CEQL</x:String>
+      <x:String>UiPath.IntegrationCore.Models</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Salesforce.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Salesforce</AssemblyReference>
+      <AssemblyReference>UiPath.Salesforce.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.BAF.Infrastructure</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Infrastructure</AssemblyReference>
+      <AssemblyReference>UiPath.Salesforce.IntegrationService.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.SalesforceMarketingCloud.IntegrationService.Activities</AssemblyReference>
+      <AssemblyReference>Cdb3166c8ff0b421da48.UB5UC4jyFlP1OXS8h2e8eWz1</AssemblyReference>
+      <AssemblyReference>Cdb3166c8ff0b421da48.UB5UC4jyFlP1OXS8h2e8eWz1</AssemblyReference>
+      <AssemblyReference>UiPath.SalesforceMarketingCloud.IntegrationService</AssemblyReference>
+      <AssemblyReference>UiPath.Salesforce.IntegrationService</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Add_Certificate_Req" sap:VirtualizedContainerService.HintSize="1400,3761" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="error_ot" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Home | Salesforce" sap:VirtualizedContainerService.HintSize="1338,3650" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="75683992-df3c-4c69-9460-3765fdc2605e" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1304,3433" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1242,3318" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1208,3231" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1146,3120" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Add_certification_input.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1112,2851" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="1050,2740" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="True">
+                              <ueab:ExcelForEachRowX.Body>
+                                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                  <ActivityAction.Argument1>
+                                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                  </ActivityAction.Argument1>
+                                  <ActivityAction.Argument2>
+                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                  </ActivityAction.Argument2>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,2550" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75683992-df3c-4c69-9460-3765fdc2605e" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--ptcdev.sandbox.lightning.force.com/lightning/page/home" CvElementArea="1691, 193, 27, 26" CvType="Icon" DesignTimeRectangle="1697, 199, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/oneHeader:header/oneGlobalCreate/oneGlobalCreateIcon/lightningIcon:createButtonIcon' tag='LIGHTNING-ICON' /&gt;&lt;webctrl tag='svg' class='slds-icon slds-icon_x-small' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/oneHeader:header/oneGlobalCreate/oneGlobalCreateIcon/lightningIcon:createButtonIcon' tag='LIGHTNING-ICON' /&gt;&lt;webctrl tag='svg' class='slds-icon slds-icon_x-small' type='' aaname='' /&gt;" Guid="227e645e-3b37-458d-bdff-9fc2d4de4f46" InformativeScreenshot="b2c261deff3763daaa5cb6ba3fdaee52.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="1759, 195, 15, 23" CvTextArgument="?" CvType="Text" DesignTimeRectangle="1633, 190, 262, 35" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/oneHeader:header/auraHtml' tag='UL' class='slds-global-actions' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/oneHeader:header/auraHtml' tag='UL' class='slds-global-actions' type='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQoAAAAnCAYAAAD3jgaVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA2JSURBVHhe7Zz5WxTJGcfzTybuJjHJk83uRk1WN+tqYsyz7g97ZHFVXEAOkUNQFJAbkfs+h/tGkBvkEu8L9M18y6mhpqa6e45qBFOf53kfmKququnprm+/9VZV/4oMBoPBASMUBsM+5OnTpzQ0NESVlZV07do1SkxMpIsXLzLD/0hDHo7BsdFihMJg2EfMzMxQcXExpaRcps4uD83MLdLK2ibdX3sYYEhDHo7BsSiDspFihMJg2AdsbGywzl5U5O3wXgGQhcHJUAZlUQfqChcjFAbDHmdwcJANKSbvzShFIBxDHagLdYaDEQqDYQ/T1tbGPAHV8CJSQ12oE3WHihEKg2GPgo5cWVXNOnf/2DxlFXdSXkUPdQ/O0tzSRpAA2Nn0/Bp5hmapofMujU0tszTUHapY2ArFs2fPaHl5mRYWFmh+fl6bLS4uUm5uLsXGxoZtOTk5XjUsotHRUd+3NBg+PDA0wFOfd/QbZV309/+k0rEzaZR+q41K6wdpanbFn29lSyub1NF3j/Ir+yj+ag39OyaHsos7vOkPWD7aCGUYYikUEAl06M3NTV+KPiAW6PSR0tXVRfn5+UYsDB8kCDYijiAON37JqKYDh2Lo15//RCe+z6Lski6vd9FL9V4PobJ5lErrBqm4doBKvFbeMES17ePU2T/N/l4r9VBCVi0dPBrLyn8XX0gT0/dZvWgDbTkFOC2FAp7Ew4cPfZ/0Eq1QAIgFPAsdrKysUElJCcXHxwd4L6EYyqAs6vjQePLkCa2urvo+/f+Bc8dvsNtgZkIMXC6vblJMUhnr5LDf/DWG4jKrmQCEap+fvOQvf/y7LBr1DT9gaAtt2mEpFPAm3EKHUIDr16/7/oscdPBIBEI21KFTLLBQBgtnYPh/N6mpqaH09HT/ueE7QAx3s9O8evXKP1TF/7sFFifhXHHO/PzxW+A32Q2w1kEccnC7kHbH39EPHDpLsWmVSkFQWUZBGx3wigsvD49kciZw2II27dZZWAoFLpBb6BIKHXXgpuA3RLSGuqIFLmBpaWlQ3UiLZP47HNbW1oLalW23PAw8BHibOh4IobC0tERxcXEB5yub2+fPFkZJ6yQQT0jPb6FPjsfTH49dpB8TS9jQQyUKVvbNuVw2dIE38lNSqT9GwQ1t2nkVWoTi+fPnzEJlLwlFKN7ExMQEM1WeaKgrGiAEWVlZyrphyHNLLPDUTklJUbYrGs7xxYsXvlLugCGv3K5bw2ARuU2VuXn+8GawilLswBh2NHnuKjs/t8zCDkrOaaSE7DqKz6qlxGv1dPlmE5slEY+Lv1pLP6fcZunDE8GLttC21XJvLUIxOTlJU1NTvk/O7CWhEG8CK+Oo8mSLFCeR4OaWWDQ2NvrbSEtLo+HhYZa+vr5OLS0tAd+hrKyM5elCPh8EqcX2YG4HrpuamoLatDLd58/BEBNLrsXOOzm7QrkVvQEdntuVvBY6HXODPjuZSAePXqDfHvmZPjp8ln73t3PM8zh8KoV+SCimq0UdQWWLagZodnE9oC20bTXMjVootra2qLu7m/r6+nwpzhihCOTx48dBIoH5bSvhQDrK6ASbiHj9vb29vtQd6urq/PmXLl3ypUbP2NgYOx+cL+4LccghG/JwTHNzM5v1GhgY8NUSPampqco2VZaUlOQrpRds4pKHHfUdE0GdPC2/lc6cz6OPvcLA4w529uev4uiXzOqg4YpnMHClJ9rGd1ARtVDgidPR0cEs1GCXEYpAamtrA+ro7Oxk6fDUxHTRUEYnN2/eZPWi01oNI8X2dQRuUYdYp2yXL19m3o0qj5uO74ElAKq67cwNrw5iLU6JziysUU55d0Dnhhdx6FRykBj85XgcVTX1U1ltD/3rx6yg/N9/cZ4uplcF1IXp1cX7O7EKtI3voCJqocDNzIUCwaBQMEKxw/T0dED5q1evsnT8roAPCXBj4qkrHouyu4UcN9Cxvqa/vz+gTm64Wfn5A0zV5+XlKY9FHdHC78dwLNT+EQ6YaeGdFtblfeKLHRuxBSy4Qsc/fCqJzqeU0D++TWPDDAw5sgsaaXXjEb19+5bq24bp06/j2bEHvSKBIObBLy5Qam5zQJ3dQ7MBbeI7qAhLKB49ehRkGHZwoRgfH1ceI2OEYgd5hSp+LzzRs7Oz2e/58uVLf7wAiE9YlN0t8F14u3DTt7e3fTnRIU7DwnjkfWRkxJ8GLwdCKXteEBQd71rYK0KBhU9ip61sGQ3o1DFJpazDo/NXNw94BcE7bH3ynKbnVqite5xulLRSR/8UvXnzlonF0Pg8i1fEZdymM+dyWLmj31wJCHLeaR6h5dWdNvEdVIQsFLiBuSCEa7JYqIQCx2DcaWdyPXIdkSBefMxshIs8GxIO8MDEsj09PSydd4jk5GT2GWA8DgGR3WQsr3cbxCzENvn31IXoKXEvqbq62p/GvQuIAp+lwnQxRFQHe1EoMNtR1jDk79CILxw5nUIfHTrL1kSsPwhtmI+hSFf/JLV6xtn0KLwKzJDweotrB2lheWf4EbVQAKi6x+NRioHKcKxqLKcSClBVVRV0QbipIs1Ijxaxjd0WCnhjvByEECC4x9MwRgcQSExd1tfXs8/4bfkxPJ7hBpgyla+JrtWwIlwocI4A04+8PXhN8K74/cgDvCiji70iFOLQA3s0yup3hAIBTAQls2410IVUr0i+2vKVsuf11jZteW3p/gP67EQC80jEWEVhzUDABjMtQw8AFcfNLIuCbDjGSvGthAJg05d8UTIzM325gVjVEQ5yWyrjqPJkCwdxYRUW8mAmQxxa8GsgutwYAgDEMvDZaeltNMjXArMObqzO5EKBIQ0HaTxdDNzuFaG4d++er7Q+5GAmhgW8Q6fcaKI/HI2lqbnIFny9fPWaLudU0+mYa3QutcJfL6ZJuVC4Esxc8OarBAKGPDvshALuZUJCgv+CYKWcPOTgWNURDrwdO+Oo8mQLFWy6452B3/T4XUQDcLvF42DorFhuyz/rGKfLyDMS2FujKy4hgoeJKJhiQBxDnMLCQt+nd2BqFsfpGnrgd4Y3x9sP1VCGXyNdyNOj2NTlF4qbXqE4dpEWV94tPHv1eotuFLfQ1Ox99jkUtrbfUGJWBVt4xevF8AbeC9pzZXoUkWiVSMCQZwfqxo9tBToBvyD8CarCro5Q4e3YGUeVJ9uHAgSInxP+dwMIHJ5g4u+H2AQHIiGKgfidYNEGM8W6ojFdyAuuxOnRjIJ2trCKexRzS+v0yfE4Ssi8wz7LYMhxNqmI4tLLWXCTk55bGzDz0dZ7b0eY3FhwhT3sKpGAOe1vdxIKgPE7nmJ26LhI4gW3Mo4qT7ZQ4b+BlfHOqcqTzelaRQKfjoWp4kw6wE2pOp+CggIWtBWXSpeXlyuPtbqxnXD6/cMxXb8/RE9ewt3smfR36v8mllDP0Ltg78bmE/ryTCo1doywzzIPHz+jY2eu0Kkfs5j3wSmu7vEvvMqt6KF5IT6hfQk33GZRGOAuwsQ0HGMFv0jRoqsOJ+Oo8mQLFacblQtFKG6xrht1t8GQUhxmiobZDQQx4TWIOzlls7vPnOBCaGft7e2OaTqRN4VNe72Kgqp+v1hgNSWmPp2AF1Fc1UWdfTvrUR48esbEAfXklHVT99Ccvx20qX1T2OzsLBMDTNmJm3XwP9KQh2Os2EtCwafb7AwzG/LshspQV6jgN8jIyFDWA8MyYQzh8DTnATyVIdDrhlDgfCFSsEhmg0IF9wva4FsA7PZcIA9gChUd1C1P532i2mY+fHeRrns7Njr4rco+WlpVx+zs2PSKRGndzixKdetYwKpMV7aZY1iATWCvX7/2peyANOThGCv2klC8723miJ5jLK6qDx0IoFPIeVB/NyLvHLFN3U9NJ/AuFPFcYW6+H0WG35+iuSHGVuDaym/c7h9boJvcGyjvptHJ+/T8RXD/k8E06vTCBuVXvttYBsGpbh0N2GYe1Ytr7BbyWM1CiNgdo0sodLynANH9ULwKJ0Md0ew7QKfHxiuIg7jdG6CjYk0FhAjrJuy8NV28T6HANDFvm5vuTXBOIPrP27aaCXALeEpY+CROlWIBlrikGx2+xOsheAZnaWX9MW1vv/GVJtp+84bWHjyhvtF5KmsY9gdEr5d5qLV3ihak/R1oy8k7sxQKxBzceF8m0CEUH/qr8LArl78kBSISzVg8UnCddvNJKiLuItXxQIgEBPaimVWJBvHlupi+7B2Z83sUKoMIwGuA4X/VMbcbR4K2lqMNLS/XdeOFIdEKhXm57ofP+3oV3l4Cntydyipq9txlwUdV5w/X8PZuBEghEtpf1w/B4BdNh6E+87p+g8EZdOTsnDwqrRtQdnxumYXtbFEWlno7vSavtn2MCguLwhpS2gqFwWB4/2BogDhCRZ3aq8Abuj89cYltN8d+kNNnb1iKBepAXaEMN0SMUBgM+wAEGzEzAe+iomEnDnEhrZI+PnKObSEX7eQP2f7t5DgWZVAWdUQyrWyEwmDYR2CtAzp7YlIyFd+uo/PJt+irb1PpT1/Gsp2hMPz/z+8zqPBOOzuGHestY7dOwgkjFAbDPgSzMVi+jqlbvnoVQwoY/kca8nCMjpkbIxQGg8ERIxQGg8ERIxQGg8ERIxQGg8EBov8BXQ5y1oSpDhgAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add Certificate Req.'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75683992-df3c-4c69-9460-3765fdc2605e" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--ptcdev.sandbox.lightning.force.com/lightning/page/home" CvTextArea="1602, 401, 107, 15" CvTextArgument="Add Certificate Req." CvType="Text" DesignTimeRectangle="1556, 391, 174, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Add Certificate Req.'" FullSelectorArgument="&lt;webctrl aaname='Add Certificate Req.' aria-role='menuitem' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Add Certificate Req.' aria-role='menuitem' tag='A' type='' class='' check:innerText='Add Certificate Req.' /&gt;" Guid="fe959a34-f979-4b21-b3fb-373e067dd2f5" InformativeScreenshot="c2ebf440a12bf52a19d43f616e9f965e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="1566, 249, 107, 12" CvTextArgument="GLOBAL ACTIONS" CvType="Text" DesignTimeRectangle="1568, 247, 105, 16" ElementType="Text" FriendlyName="'Global Actions'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/oneHeader:header/oneGlobalCreate/uiMenuList:menuList/auraHtml' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/oneHeader:header/oneGlobalCreate/uiMenuList:menuList/auraHtml' tag='SPAN' type='' class='text-heading--label' aaname='Global Actions' check:innerText='GLOBAL ACTIONS' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAUCAYAAACH1bNfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKCSURBVGhD7Zc7bsJAFEWzOHbAClgAoqenp6eGkp410NKyBVpKR8fJsy7Xb+y4y0hzJCsez/vfAZyvrlEdTbQKaaJVSBOtQppoFdJEq5CRaM/ns1uv191qteov7nkG7/e7OxwOw9q5Xq+DHxdr5fV6dZvNZtjf7/d9TOd+v/d22Ctz+TOooZQHjsfjqB6vM66oiQtbr09jcdGHwlrnGVCj2np+j/MhWjYsnoXT1NCy4dAEV+DNsufCwul06vP43lLRsCcHOb3xGIzmIO7j8fhd/cC+1+F9gPdKbmzUlxq22+1oTtjojLVe1rfbrb8PBtGyQhwCZENjvdvtRr5u7zkoTBsF9njG8PDV5kr5S2DHAcjyZGJkZHZZHy4ElPrlClFARXOfjEG0rDGnNLQpXy1QC5qKRRPZ/lLRYhg+iCVx/iJaZgOeJ+bEWg951BlgQ3z8MwbRPDH3/p1aatZ9Fd2jSP2udqE9vsddMmwfbOnwzOE1wFRsR/f4Gz0TU+/dn2fZjGD2k6YBS0Mr+YL6e7M81xNFXOKX1ktE85p0vSQO9XMp3kdmE/D1HHlKNeiMHOx9toNoOGe/Sxqw1GzJ1+29WV+TKz6FcS15e1Vo1GPpSxb7pUEr2Lid18189PAFmZ0KEH7n87komseAQTSgOE/OsznRgGLUl7+stcisifApxSZ/xJjKr2SNggpFDA6EDot7Hx724RN4/FKv/nZKbLUB1rxRRl78LpdLfw/U6R+ID9GAJHo6Y6gQxem+FuW+WbP6m6Ynn+IQJHIFWvRc/iAbDvBc+/F6Mh/iZ30QJ2oP8Nfa/ABkdWWHR+eY/V83Eq3x/2miVUgTrUKaaBXSRKuOrvsGgtML50b19hwAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Contact Name*'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="75683992-df3c-4c69-9460-3765fdc2605e" Text="[CurrentRow(&quot;Contact Name&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--ptcdev.sandbox.lightning.force.com/lightning/page/home" CvElementArea="1435, 603, 211, 40" CvType="InputBox" DesignTimeRectangle="1437, 605, 183, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT 1672:0'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='Contact Name*' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='Contact Name*' class='default input uiInput uiInputTextForAutocomplete uiInput--default uiInput--input uiInput uiAutocomplete uiInput--default uiInput--lookup' /&gt;" Guid="57caaaff-5a5c-40eb-85d2-53b52f8ded44" InformativeScreenshot="689802c541a1382d70d0645a9d1274d8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="1435, 584, 92, 13" CvTextArgument="* Contact Name" CvType="Text" DesignTimeRectangle="1436, 581, 90, 20" ElementType="Text" FriendlyName="'Contact Name*'" FullSelectorArgument="&lt;webctrl sfl-path='uiInput/uiLabel:inputLabel/auraHtml:labelElement' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiInput/uiLabel:inputLabel/auraHtml:labelElement' tag='LABEL' type='' class='label inputLabel uiLabel-left form-element__label uiLabel' aaname='' check:innerText='Contact Name&amp;#xD;&amp;#xA;*' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF4AAAAYCAYAAABz00ofAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKPSURBVGhD7ZWxqlNBFEX9Fjs/wsr8gATs8wWxsQlYWKSwENJYSBpBkiJg+rSpHuYTJGAhWIhBFAxYOLKGt8P2vDvh3ffUaWbBkDkzc/ac2XfuzZ3UqEIzvhLN+Eo04yvRjK9EM74SzfhKXDH+8PxFbo1/y8n4n+/36evLV+n76m369vpN+vL0WR6LHA6HNBqN0mAwyI0+Y7dlNpul9Xp9Gd2McxrH4zFNJpPc6Dvk3HbvvpyMx/APd+/90RhzdrtdNptfsd/v02azuYxuzv8wfjqd5osS11Q1Ho4X79Knh4/Sx/sPct/hVo/H42x0ifg2YITgYMQ05obDYdbSTVSO3iDmWKNxf9gxZ7VadWo4Mh6deI5ovGqk+RvC+Hw+P52R2M9M7KApnTh3Mv7Xj2P6/PhJNpybTp8xQcFdr6mQGfEAilWEDCSOh/Jc3iKZQ47MjPswtt1ucz9qOORhPJrxLOS43nK5zP24F/qqQ4bHWOeLe8Tarvy5lkCI5BJxI+CQHJYxNvV85rh5FAznTGMN2vy6ZuScButlPPhafkt5Phf1SzF7Ua8eAkT/ehkfjXW6HowbRkE+73MQD8E4N0ivqm5W1z4iajjReLT0ySHH8+hrX5rmon4plvGuQXP/rm28F9pF14Px20lBbhh6JePjXr723AWIRjisd+NBWovF4pQX6yTWXNQvxV17Ra5tPCCqP0VBn+8xpnArS4Xx6wdyM8HXoumfIQyK31KtJe77jXfIKd1qcqixaw7OxfyWLgj0Mh4wofT6yBTNeVH0KUyw1o3HEB6qDGa97+Fr4z7UBFHDKRkvLdXq2miRo7k+xgOxavQ6obfxjb9DM74SzfhKNOMr0YyvRDO+Es34KqT0G5J2X/aEdIX7AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Certification Valid'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="75683992-df3c-4c69-9460-3765fdc2605e" Text="[CurrentRow(&quot;Certification valid form&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--ptcdev.sandbox.lightning.force.com/lightning/page/home" DesignTimeRectangle="1665, 604, 209, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT 1756:0'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='Certification Valid From*' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='Certification Valid From*' class=' input' /&gt;" Guid="452b6547-fe35-45e8-8028-5891f809ac86" InformativeScreenshot="d07fb23b21ef72781c6a9596a3ab2e01.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="1664, 584, 143, 13" CvTextArgument="* Certification Valid From" CvType="Text" DesignTimeRectangle="1665, 581, 142, 20" ElementType="Text" FriendlyName="'Certification Valid'" FullSelectorArgument="&lt;webctrl idx='2' sfl-path='uiInput/uiLabel:inputLabel/auraHtml:labelElement' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' sfl-path='uiInput/uiLabel:inputLabel/auraHtml:labelElement' tag='LABEL' class='label inputLabel uiLabel-left form-element__label uiLabel' aaname='' check:innerText='Certification Valid From&amp;#xD;&amp;#xA;*' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJIAAAAYCAYAAAARUKQwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOkSURBVGhD7ZexalRBFIZ9Fjsfwsq8gATs8wRrYxOwsEhhISSFhWwjSBrB9Gm3ElPkAWTBQthCXETBBQtHvkv+5d+Tufdmk0mwOB9c7p2ZM+f8c+bc2bv3SpI0IAspaUIWUtKELKSkCVlISROykJImZCElTbhUSMuXr7rrrpnP52Vvb6+7q727u9td5+fn3djZ2Vk3dlOWy2VTfzfl5OSkHB4eds8xDxFsuf431oX05/O8/Hj9pvx6/6H8fPuufH/+ouuLaBN2dna6i2f6toVN3N/fL6vV6qJnExLbKmHEINZtFs5QDC+UGmPjTl8hKb72hWsov61ZFxIF9OX+g42LPockIdCTxZtzenp60bo6VymkVht/F4UEtYIg9sHBQe8JA60KaSzObbLx07b6+KksHj8pXx8+6p4dTp3JZDIo1E8rfpJky5250+m0Gzs6Olq/NSpM2SwWi403i2f6PLYKQzZKLHf16aSMJ2jNH7CRcS5IFy+LxmsbCbLVXPAXpqYP6FchRR+0ySVz8HN8fFyNP1RI+Cb3xJSWmBcvZPzjSznmjr238eGsC+nv71X59vRZV0CcRDzTJ8ZOEPoZ11vvCVEyPAHRX0wgC5Mv+hjDRnHki7HZbNb1k2T5Y76SE7W5P8CXa3Ft0i5ftNkAzXViHGAe/hnr08e4+1ceok5p8TwK/A4VkheudLof6QTuOghkG9tRw6WP7T5IjhZbw5MPvjAuLxKI9tGGWNoQTygXfjWvD9erxdf8+bMY0h59RTxuzbdwOzZFzx7P+wV9cRNBunTC+CnD3ecQ23MPxFVeY9yxNmxVSDG4w7gvQhf9cTMg+os2CMUGfEPoi4sQUYPslOSaP54Zc22g+DXtri0ypLVPn2+Mx6Ofy6n1AWscOpF8TtQFngdsfXysDVcuJE9QjZo4UdsM7K9bSD5PxH7XM1ZIcV2+KVEXuLYajCvZshvS5xvj8WobJt8R1xyJc6IWYN6dnEiAA/1WCp75EGXh/A7XEuzJEXEx0Qah8kWfNltxlBjafCPFxfGsNjH6Cgmwi5usdk27a6vBGBp93pA+H/N4PPv3GPfrfiP5HHx7DsFtXA+MtWGrQgKS5MdzLAYWGsfoj5tBP+PY4TPaIFSbRR9jSpISoTjYuT8u5vtipRubsX9tcU1Ru2urIX0ef0ifb0yMJ93Sdd1/bXFOzKGPx0IZa8PWhZQkNbKQkiZkISVNyEJKmpCFlDQhCylpQhZS0oBS/gG9scFwbb/fvQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NSelectItem DisplayName="Select Item '--None--'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[CurrentRow(&quot;Cerification Name &quot;).ToString]" ScopeIdentifier="75683992-df3c-4c69-9460-3765fdc2605e" Version="V3">
+                                      <uix:NSelectItem.Items>
+                                        <scg:List x:TypeArguments="x:String" Capacity="3">
+                                          <x:String>--None--</x:String>
+                                          <x:String>LG Certified</x:String>
+                                          <x:String>ABB Startup Certified</x:String>
+                                        </scg:List>
+                                      </uix:NSelectItem.Items>
+                                      <uix:NSelectItem.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--ptcdev.sandbox.lightning.force.com/lightning/page/home" CvTextArea="1450, 719, 53, 12" CvTextArgument="--None--" CvType="Text" DesignTimeRectangle="1436, 709, 209, 30" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'--None--'" FullSelectorArgument="&lt;webctrl aria-role='button' tag='A' aaname='--None--' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='A' aaname='--None--' type='' class='select' check:text='--None--' /&gt;" Guid="ed8f2a4a-b9ad-4251-b0e8-e133f7116a22" InformativeScreenshot="537dc12081eabbd1736261d585d41db0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="1442, 688, 110, 13" CvTextArgument="Certification Name" CvType="Text" DesignTimeRectangle="1444, 686, 107, 17" ElementType="Text" FriendlyName="'Certification Name'" FullSelectorArgument="&lt;webctrl tag='SPAN' aaname='Certification Name' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' aaname='Certification Name' type='' class='' check:text='Certification Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG8AAAAVCAYAAABIfLDHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKtSURBVGhD7ZY9jioxEITf4bgBJ+AE5OTkEBOTkpOSEnACYjJSwnn6RhQqameG2bf72LXkkqzxT3e7uss2/GkqikUVr2BU8QpGFa9gVPEKRhWvYLxNvPP53Mxms/ar8XQ6bdvpdGrXjsdju/ZVXK/Xb433W/FBPCU+mUzaRp+5z4LCLRaL5na73WeesVqtmt1udx99DezBXv9bLNUG7gnm3n1YnsRjcwRzEtyQ/X5/H43HGPG+K9l3ijefzztv9Y+KJ2J61rrgt5Lnzp9AfDebTbu2Xq8fN1eHQTaXy6UttNboM+d7SwzZ6Iby1ZxeBOdE64oHKG76AvHigGq970XAR4cEH8UALl5yUjzm8dtut481fGg+djjv5PUQDyeI9d2UPN1KGkL0EdODZzy3B5ksa9hoH0/4cDi08yStePjTQHLzeIBYzsW5ibtiMabw8nUQFz++xJQP8Hz4qu/x8KMvP2wQxcd+sHyPzBE8iedkEqx7Afgul8uWFM2FAWmfNp4scyo2jbjy64PzzcQ8nveFIe4Zy4ENa3zTzvNx+F7JZWicawAxdajB6JvHuq6vN+bZwAsAMl7a9InHXN8hSg5jxVPBHdq/i3ufEBnLfd1HfMRTPzHYiRcYGtP3p1fNazP6Nw9i7ujAR0kI2P+reO4n5LzzeSVe5oX90Kvh3BzYsI/b6mmTT3LxvZLL0Lhrr8RDPAAR/yMC6PNjThBOQldS2GQBsPNip02feNpHzwNjfvNUJEEFA0PiAeyci3Pr4u7cHNhkQbU3twKf3Jsv+Sg3X3s19hy78CQegIBfU0+aoIiba8xnATKptPECdSXhTwZ2Ho+WiYk3Nq/+bWZOyd25ObDB120BMaiLfMSFRmx8sOnKc2icOefF+iBeRTmo4hWMKl7BqOIVjCpesWiav2FKDouYTcdQAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NSelectItem.Target>
+                                    </uix:NSelectItem>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Certification Valid To*'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="75683992-df3c-4c69-9460-3765fdc2605e" Text="[CurrentRow(&quot;Certification valid  To&quot;).tostring]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--ptcdev.sandbox.lightning.force.com/lightning/page/home" DesignTimeRectangle="1665, 709, 209, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT 1829:0'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='Certification Valid To*' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='Certification Valid To*' class=' input' /&gt;" Guid="425a1181-0530-49b7-b9b6-a62f7a2994a1" InformativeScreenshot="3407984dd1be44c547172b051620bc33.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="1664, 689, 127, 12" CvTextArgument="* Certification Valid To" CvType="Text" DesignTimeRectangle="1665, 685, 125, 20" ElementType="Text" FriendlyName="'Certification Valid To*'" FullSelectorArgument="&lt;webctrl tag='LABEL' class='label inputLabel uiLabel-left form-element__label uiLabel' innertext='Certification Valid To*' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' class='label inputLabel uiLabel-left form-element__label uiLabel' innertext='Certification Valid To*' type='' aaname='' check:text='Certification Valid To*' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIEAAAAYCAYAAADdyZ7bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM8SURBVGhD7ZexihNRFIZ9Fjsfwsp9AVmw3yeIjU3AwiKFhZAtLGQbQdIIpk+71WKKfQAJWAgpxCAKBiy87jfsH/6cvTNJTNxCzwdDZu49c85/z/0zmdwpyX9PmiBJEyRpguSKNEGSJkjSBMkVN0yweP6iOW6b2WxWTk5Omk9dHx8fN8fl5WUzN51Om7l9WSwWB823L+PxuAyHw+Y89iFCLMchWZng54dZ+fryVfn+9l359vpN+fL0WTMWUQOPjo6ag3PGdoUN6Pf7ZblcXo+sQ1MOtVhqUOtvbnpXDd/kGpvmnZoJVFt74sc2PVyZgM3/ePfe2sGYwwJJ7AvFsZPJ5Ppqe7YxwaE27TZMALXNpPZgMGj9ZsO+JnCo0+v1dvpirv0cLC/el/nDR+XT/QfNuUNSknctxp8SPMYVK2FnZ2fN3Onp6cqpMpVi5vP5mqs5Z8xrR+erKXxqTE8o18RRywdsQrwXpAuja75tExSre8HNXtMHjMsEMQfX9JJ7yDMajVrrQ02D1/V9ESsT/PqxLJ8fP2k2nycA54yJTd/c+G1zMVqIi4/5onh/EjDGHDGqo1zMnZ+fN+M0SPm4X42N2jwfkMu1uDZp901iA3WvE+sA95GfuTZ9zHt+9SHqlBbvY8TvB7TUTK1ruPFi2AbJJLSGNw741GOwVjjGxxhqqZmMqRkc5NV9bbheYn1zPJ+fiy7tMVfE69ZyC49rM4GPC8a2NUGbVnL62E4m8E2LMK9Hjh+Mx0ZCzBdjXKg3k7HYGBE1KC42w/NxzpxrA9WvaY9NdLq0tunrMkHc8F1NUHsfiTm2NoEvrkZcsOPCBPF/aoKaGeO469lkgrgub17UBa6tBvM02eO69CkWvJ6PC+Vuw++P6xauC7Y2AVA8vlhwzksTRfntiQWh1sjYlBjjQhljjhjVUSO45p0gNoxzXXeZAIiLG6TrmnbXVoM5NPp9Xfp8zutx7u8ffO76TkDswd4JBAv0R1rcSETGuVphbQxx5Iwx3mjGmCNG1yxMdYjzfBzeZJBuYjb9O4hritpdWw3p8/pd+tpMANItXfv+O3BDiJ1NkPx7pAmSNEGSJkiuSBMkaYIkTZCUUn4DPaO2D1jUz74AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Notes'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="75683992-df3c-4c69-9460-3765fdc2605e" Text="[CurrentRow(&quot;Notes&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--ptcdev.sandbox.lightning.force.com/lightning/page/home" CvElementArea="1445, 774, 430, 75" CvType="InputBox" DesignTimeRectangle="1448, 776, 426, 72" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'TEXTAREA 1870:0'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' aaname='Notes' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' aaname='Notes' type='' class=' textarea' /&gt;" Guid="8ebf0797-6efc-46d3-b2e2-3894fe2d47f5" InformativeScreenshot="0962dab509f2a2487345dcd22611ded2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="1447, 757, 36, 12" CvTextArgument="Notes" CvType="Text" DesignTimeRectangle="1448, 753, 34, 20" ElementType="Text" FriendlyName="'Notes'" FullSelectorArgument="&lt;webctrl idx='4' sfl-path='uiInput/uiLabel:inputLabel/auraHtml:labelElement' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' sfl-path='uiInput/uiLabel:inputLabel/auraHtml:labelElement' tag='LABEL' class='label inputLabel uiLabel-left form-element__label uiLabel' aaname='' check:innerText='Notes' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAYCAYAAACWTY9zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEXSURBVEhL7ZKxkYQwEAQ/ODIgAiLAx8cnCVwSIQZSABNTV039fA0Ld/fyMDRVKsHuaLcX8ZMeqgKWqwKWqwKWq+eD7fueuq47Fs+uaZqO9R/N83xbI1cnsL7vU9M0F4hHgFG4bdu0LMtv5gpGrq7rVFXVsZRjV4xFLeR+Bl/X9Yiz806cvPe8gJGMUzuYiqkpHrx6j2fx+6DKb9t2Ohd1C4aGYTh9CX8m56K4YhEs+gElz+49ot6C+aQRLBbDw1lq3IH59fq14cFLLNZ8C4bUZBzHE1juF4tNowTIWekjGKKhT0SeiVUkFo1g+PknY92oeK1fwfSz+yHB6Wp8UoF6nF1eFhDuU8z1B/Y0FbBcFbBcFbA8pfQCuRd3ChW1IYQAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75683992-df3c-4c69-9460-3765fdc2605e" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--ptcdev.sandbox.lightning.force.com/lightning/page/home" CvElementArea="1823, 952, 64, 35" CvTextArea="1841, 963, 29, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1825, 953, 61, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;webctrl sfl-path='forceChatterPublisherQuickAction/auraIf/uiButton:submitButton/auraHtml:button' tag='BUTTON' type='button' aaname='Save' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='forceChatterPublisherQuickAction/auraIf/uiButton:submitButton/auraHtml:button' tag='BUTTON' type='button' aaname='Save' class='slds-button slds-button--brand cuf-publisherShareButton uiButton' check:text='Save' /&gt;" Guid="f84ca489-1aad-415e-9d59-cfe2ce63b350" InformativeScreenshot="12b0e650d072aff5d4e5508767025b2e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvElementArea="1823, 952, 64, 35" CvTextArea="1841, 963, 29, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1842, 954, 27, 30" ElementType="Text" FriendlyName="'Save'" FullSelectorArgument="&lt;webctrl sfl-path='forceChatterPublisherQuickAction/auraIf/uiButton:submitButton/auraIf/auraHtml:span' tag='SPAN' aaname='Save' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='forceChatterPublisherQuickAction/auraIf/uiButton:submitButton/auraIf/auraHtml:span' tag='SPAN' aaname='Save' type='' class=' label bBody' check:text='Save' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAAiCAYAAACnSgJKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEVSURBVFhH7Zc9DoMwDIW5Uu/Wc3AVJI6RrTtiRMrAQiTEgOTGIT92CEy0XmLpSQVe8sUvXtoYY0BKzev9ASlVuIgqXEQVLqIKj+o0kNpB9fz7k2JwB9ZzMvQGlErfn9YJPl7B7EGWIw5XwYdrlmEi3hlG2KDzzzRJ7stjV5u1lKNuhy29dz4PwN+rgTZ48dmn1w47SXICtfLmzgMXO7y7b9rdudMDgO/5HngY2v0ZHuQPkU6Km9EqAHFNTCH3+yIzdQ1HxQjzLni3wcc7yzwFEbi9E03uzsoNC8JdChmMbXyARs1jjuujj6swcKTIQjc8obQFZV05EB08p2PIUvHD3cf+Y1W4iCpcRBUuIll46U/7f2TgC1nt+IcJbOjKAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NCheckState DisplayName="Check App State 'Review the'" sap:VirtualizedContainerService.HintSize="954,619" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="75683992-df3c-4c69-9460-3765fdc2605e" Timeout="5" Version="V3">
+                                      <uix:NCheckState.IfExists>
+                                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,402" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NGetText DisplayName="Get Text 'Add Certificate Req.'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="75683992-df3c-4c69-9460-3765fdc2605e" TextString="[error_ot]" Timeout="10" Version="V3">
+                                            <uix:NGetText.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://aellc--ptcdev.sandbox.lightning.force.com/lightning/page/home" DesignTimeRectangle="1448, 641, 397, 39" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'These required'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/auraIf/flexipagePage/oneFp0M08A000000cxanSAA__pageWithoutSobject__1673088200000/oneDockingPanelManager/forceDockingPanel/forceChatterPublisherQuickCreate/forceQuickActionLayout:quickActionLayout/forcePageError/auraIteration/auraHtml' tag='LI' aaname='*' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/auraIf/flexipagePage/oneFp0M08A000000cxanSAA__pageWithoutSobject__1673088200000/oneDockingPanelManager/forceDockingPanel/forceChatterPublisherQuickCreate/forceQuickActionLayout:quickActionLayout/forcePageError/auraIteration/auraHtml' tag='LI' type='' class='' /&gt;" Guid="15ea3061-6d40-48bf-a3fc-153dce6efece" InformativeScreenshot="d39555137d7cdb6e0d8e49a2936ebf69.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CvTextArea="1458, 535, 116, 16" CvTextArgument="Add Certificate Req." CvType="Text" DesignTimeRectangle="1460, 533, 113, 17" ElementType="Text" FriendlyName="'Add Certificate Req.'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/auraIf/flexipagePage/oneFp0M08A000000cxanSAA__pageWithoutSobject__1673088200000/oneDockingPanelManager/forceDockingPanel/auraHtml' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/auraIf/flexipagePage/oneFp0M08A000000cxanSAA__pageWithoutSobject__1673088200000/oneDockingPanelManager/forceDockingPanel/auraHtml' tag='H2' type='' class='panelTitle slds-truncate' aaname='Add Certificate Req.' check:innerText='Add Certificate Req.' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHUAAAAVCAYAAAB48KHmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKNSURBVGhD7VbtbeMwDL0xPJ+BjtKfF3gRZ5F0jgKZQuUT9UHSlBLHuB7q6gEuIlmi3geV5k8YOB1GqCfECPWEGKGeECPUE2KEekIcDPUe1rc5rJ9paPGxhOlyS4PvxC0s0xSWjzQk3C5TmGgOfOLn/8Lre+CGer/OZMBC1jzC8VCL2emRQTyNzzXMPb6P3u8EOM/XexrtATeb1PsvmssJFQcvYSHijw0+EmoSqN5TvctKf3fimVDfXqjbwLFQJU/492Ijd7ANNQfRCIRvMXfZfL2ZUGUnEvlOqM8YI29xXYsz6Mwr1cb83/eypq5La8ALHMR7GLg5W63JpksteT2HsF2rfek3sm4+7JNcfM3A895uQkVR7hxhTAYKiY5nIXmN7bpEwj3YqW0Qa5e9srZTd3NTTX1zU1WoMVAZzsqfab5oifVrPbcpWvUVwKvNs615j7c2VGOOJmcLA5hLpIywCMw1Q5XiLEwohNrR23dHQsVnrcmD0El46EtXd75teDqcCUXzLm9NqLpTCMoMLYxhQrWHdMXZWhJWfHpiLWfvy6F6mjI4rHp+XeeFqnjisSFEgFfmyftqnY7mXd6qUBvk6PG/AgBhHg4xQjZNIqCNsZDiLUxgwKFQvZtq5zHuhWr4NGF0Kd4dzTu9raE6GwG5OX4Wa+K4mAdS0ggetw5mQTZYMij9+oVx/l4TGPByqFlD3cv/U539Ymwb0vrSBurq4KS/fc0db1N2GSVUS7TAEZRv8ObXbwqK3xP5zlcEI5Erj6iFgNU3R35nDE/IvFiDWdMJFeBg0zl5HbiXOfrR5OqsAUlf8GxvPwBeOlSey3xamgk9b1uhDvwwdC7MCPWnYoR6QoxQfxdGqKdDCF9Ry39QSWhdAQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NGetText.Target>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NGetText>
+                                          <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="False" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfExists>
+                                      <uix:NCheckState.IfNotExists>
+                                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,205" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="True" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="True" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfNotExists>
+                                      <uix:NCheckState.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--ptcdev.sandbox.lightning.force.com/lightning/page/home" CvTextArea="1447, 600, 208, 18" CvTextArgument="Review the errors on this page." CvType="Text" DesignTimeRectangle="1448, 596, 206, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Review the'" FullSelectorArgument="&lt;webctrl tag='SPAN' aaname='Review the errors on this page.' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' aaname='Review the errors on this page.' type='' class='genericError uiOutputText' check:text='Review the errors on this page.' /&gt;" Guid="e5b631d0-c3f7-49bb-91a1-be969e33c78b" InformativeScreenshot="98ac41a99a488bd097bf3e80e9bd2ba6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="1458, 535, 116, 16" CvTextArgument="Add Certificate Req." CvType="Text" DesignTimeRectangle="1460, 533, 113, 17" ElementType="Text" FriendlyName="'Add Certificate Req.'" FullSelectorArgument="&lt;webctrl tag='H2' aaname='Add Certificate Req.' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' aaname='Add Certificate Req.' type='' class='panelTitle slds-truncate' check:text='Add Certificate Req.' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHUAAAAVCAYAAAB48KHmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKNSURBVGhD7VbtbeMwDL0xPJ+BjtKfF3gRZ5F0jgKZQuUT9UHSlBLHuB7q6gEuIlmi3geV5k8YOB1GqCfECPWEGKGeECPUE2KEekIcDPUe1rc5rJ9paPGxhOlyS4PvxC0s0xSWjzQk3C5TmGgOfOLn/8Lre+CGer/OZMBC1jzC8VCL2emRQTyNzzXMPb6P3u8EOM/XexrtATeb1PsvmssJFQcvYSHijw0+EmoSqN5TvctKf3fimVDfXqjbwLFQJU/492Ijd7ANNQfRCIRvMXfZfL2ZUGUnEvlOqM8YI29xXYsz6Mwr1cb83/eypq5La8ALHMR7GLg5W63JpksteT2HsF2rfek3sm4+7JNcfM3A895uQkVR7hxhTAYKiY5nIXmN7bpEwj3YqW0Qa5e9srZTd3NTTX1zU1WoMVAZzsqfab5oifVrPbcpWvUVwKvNs615j7c2VGOOJmcLA5hLpIywCMw1Q5XiLEwohNrR23dHQsVnrcmD0El46EtXd75teDqcCUXzLm9NqLpTCMoMLYxhQrWHdMXZWhJWfHpiLWfvy6F6mjI4rHp+XeeFqnjisSFEgFfmyftqnY7mXd6qUBvk6PG/AgBhHg4xQjZNIqCNsZDiLUxgwKFQvZtq5zHuhWr4NGF0Kd4dzTu9raE6GwG5OX4Wa+K4mAdS0ggetw5mQTZYMij9+oVx/l4TGPByqFlD3cv/U539Ymwb0vrSBurq4KS/fc0db1N2GSVUS7TAEZRv8ObXbwqK3xP5zlcEI5Erj6iFgNU3R35nDE/IvFiDWdMJFeBg0zl5HbiXOfrR5OqsAUlf8GxvPwBeOlSey3xamgk9b1uhDvwwdC7MCPWnYoR6QoxQfxdGqKdDCF9Ry39QSWhdAQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NCheckState.Target>
+                                    </uix:NCheckState>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelForEachRowX.Body>
+                            </ueab:ExcelForEachRowX>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVFhH7ZZBSBRRGMdHYolFJCJEJEQkJERCPISHCAlP0qGT5w7RwUNIhESEiAfxGJ46ONIpwmOIiHiQiAiRiOgUb6JTePLQIUQ6TL//25ndt85jXGmc7eDht2/3zbfv+79vvu+9L4jjuKOdnAv4fwUEq+ZCsBp1wmW4BFXN+Wz/hYwAHMkxDs0I431YgHl+TzHe0LNmu6gfrkEfNl1BGJ1KZJOA2q7NAIs9hm8QNzB/GL/CDAzCTZiFDfgMb+ERjEKnu24exwREPfASHMcZDhDzjvHLsfmUXbgHen1d0JugaGWiUxfAw4ssTJjNId99C58GCXwA0/CCNcFG7jawyUYuuQKUbOvgW7AoDCzCdbAiXAEKP+H1/rFoXkG/T8DvxKAMnkHFFXAFlM0+4+IJ7evotQKUFPxQaX2oG5TD3USADf8y/EoelMWTgA8dPiqXI+dBWcxIAPUffXImy2RcAqokRDt2/wO/3Qgw3HJeg7PmKVTSV/AzmSwJ84axzxYAXyqgCvAYFo35zrgEw+m1nZbhMHysGRVIaHS3vMbxCuNzmASVfPNlpAm4hSHGBd0Hob3YuP2MDjj1GDpp865jexqqs5kAdUJSvAd+Bw32YQt2QD3Ce5gDdVRV15mPuoD6hKIRqv+jRGp3+kn9gRJqDIZATvU6vbv1kRHgwiLqZLSbbJXUzo5NGIeK7/+tkC+ATCWR1KjcAXU126BkXYOHoPd7YpjzyBWQghOVqsJ6FVF0vzaT1fO1FOY8WhJwlpwLaLOAuOMveA1Of+TuOKQAAAAASUVORK5CYII=" InformativeScreenshot="3e3dc152d4b9ca7792e319341f288cac.jpg" Selector="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" Title="Home | Salesforce" Url="https://aellc--ptcdev.sandbox.lightning.force.com/lightning/page/home" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

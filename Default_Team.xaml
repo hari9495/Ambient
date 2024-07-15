@@ -1,0 +1,480 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Default_Team" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1202,819" sap2010:WorkflowViewState.IdRef="Default_Team_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Default_Team" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1396,5246" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1334,5135" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="GB-25102k23 1.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="current" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1300,4866" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1238,4755" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\HariSivaSaiKumarMada\Documents\Equipment Sales.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1204,4486" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Home | Salesforce" sap:VirtualizedContainerService.HintSize="1142,4375" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V2">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1108,4158" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'App Launcher'" sap:VirtualizedContainerService.HintSize="1046,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/page/home" CvElementArea="27, 235, 32, 31" CvType="Icon" DesignTimeRectangle="32, 239, 23, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'App Launcher'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/oneAppNavContainer:appnav/auraIf/oneAppnav:oneAppNav' tag='ONE-APPNAV' /&gt;&lt;webctrl tag='BUTTON' aaname='App Launcher' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/oneAppNavContainer:appnav/auraIf/oneAppnav:oneAppNav' tag='ONE-APPNAV' /&gt;&lt;webctrl tag='BUTTON' aaname='App Launcher' type='' class='slds-button slds-show' check:text='App Launcher' /&gt;" Guid="c4041081-604f-47fb-8fbc-6bf41ba4c95d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC6SURBVEhL7ZNBCsQgDEXn0AqewCMoXk4QXHgA16ZkxoJ/FWiwXUw/uHqBl7T8D92YP5HVWimEQM45SilRKYXGGJPqOch40FpLxpjvizFS731SPQcZb3QO8vPeU2ttUj0HGZ++DvOm62ZaDjL+xnw6b8SDOedJftFykPHP5E349HWjM1oOst15Tvb27CoHmbZHEgeZtkcSB5m2RxIH2e48J3t7dpWDTNsjiYNM2yOJg0zbI4mDbHdulBEdWa8xQc2OfR0AAAAASUVORK5CYII=" InformativeScreenshot="bf834ec1d5819f2cbff4d0646800a583.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="75, 241, 114, 17" CvTextArgument="Ambient Sales" CvType="Text" DesignTimeRectangle="76, 239, 113, 23" ElementType="Text" FriendlyName="'Ambient Sales'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/oneAppNavContainer:appnav/auraIf/oneAppnav:oneAppNav' tag='ONE-APPNAV' /&gt;&lt;webctrl class='slds-truncate' tag='SPAN' aaname='Ambient Sales' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/oneAppNavContainer:appnav/auraIf/oneAppnav:oneAppNav' tag='ONE-APPNAV' /&gt;&lt;webctrl class='slds-truncate' tag='SPAN' aaname='Ambient Sales' type='' check:text='Ambient Sales' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'App Launcher'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1046,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Text="Default teams" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/page/home" CvTextArea="73, 331, 139, 13" CvTextArgument="Search apps and items..." CvType="Text" DesignTimeRectangle="41, 322, 296, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT input-349'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/oneAppLauncherMenu' tag='ONE-APP-LAUNCHER-MENU' /&gt;&lt;webctrl tag='INPUT' aaname='Search apps and items...' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/oneAppLauncherMenu' tag='ONE-APP-LAUNCHER-MENU' /&gt;&lt;webctrl tag='INPUT' aaname='Search apps and items...' type='search' class='slds-input' /&gt;" Guid="ff4d738b-f2c0-4e58-a6ca-8d46916d5e04" InformativeScreenshot="ebbe042811d6cbb751e02c7f3fd6acd8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="39, 293, 101, 18" CvTextArgument="App Launcher" CvType="Text" DesignTimeRectangle="41, 290, 296, 20" ElementType="Text" FriendlyName="'App Launcher'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/auraIf/auraHtml' tag='H2' aaname='App Launcher' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/auraIf/auraHtml' tag='H2' aaname='App Launcher' type='' class='slds-text-heading_small title' check:text='App Launcher' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'App Launcher'" sap:VirtualizedContainerService.HintSize="1046,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/page/home" CvTextArea="40, 450, 89, 13" CvTextArgument="Default Teams" CvType="Text" DesignTimeRectangle="41, 448, 87, 17" DesignTimeScaleFactor="1" FriendlyName="'Default Teams'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/oneAppLauncherMenu' tag='ONE-APP-LAUNCHER-MENU' /&gt;&lt;webctrl tag='B' aaname='Default Teams' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/oneAppLauncherMenu' tag='ONE-APP-LAUNCHER-MENU' /&gt;&lt;webctrl tag='B' aaname='Default Teams' type='' class='' check:text='Default Teams' /&gt;" Guid="06176718-5854-4d7e-9e39-d8821fc724ea" InformativeScreenshot="2f7badc79e8f6b993fcfcdf38c9fa5be.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="39, 293, 101, 18" CvTextArgument="App Launcher" CvType="Text" DesignTimeRectangle="41, 290, 296, 20" ElementType="Text" FriendlyName="'App Launcher'" FullSelectorArgument="&lt;webctrl tag='H2' aaname='App Launcher' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' aaname='App Launcher' type='' class='slds-text-heading_small title' check:text='App Launcher' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NCheckState DisplayName="Check App State 'Default Teams'" sap:VirtualizedContainerService.HintSize="1046,491" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Timeout="5" Version="V3">
+                                      <uix:NCheckState.IfExists>
+                                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,274" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[current.Sheet(&quot;Default team&quot;).Cell(&quot;O2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[&quot;Pass&quot;]" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfExists>
+                                      <uix:NCheckState.IfNotExists>
+                                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,274" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[current.Sheet(&quot;Default team&quot;).Cell(&quot;O7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;Fail&quot;]" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfNotExists>
+                                      <uix:NCheckState.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Default_Team__c/list?filterName=__Recent" CvTextArea="76, 293, 82, 13" CvTextArgument="Default Teams" CvType="Text" DesignTimeRectangle="77, 291, 85, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Default Teams'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/forceObjectHomeDesktop/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/lstBreadcrumbs:breadCrumbs' tag='LST-BREADCRUMBS' /&gt;&lt;webctrl tag='SPAN' aaname='Default Teams' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/forceObjectHomeDesktop/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/lstBreadcrumbs:breadCrumbs' tag='LST-BREADCRUMBS' /&gt;&lt;webctrl tag='SPAN' aaname='Default Teams' type='' class='slds-var-p-right_x-small' check:text='Default Teams' /&gt;" Guid="b17677a0-a6fe-476b-8548-af7718b0d833" InformativeScreenshot="d348ed04e7a74678b9663dcc4603c145.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recently Viewed | Default Teams | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvElementArea="1840, 291, 65, 36" CvTextArea="1858, 303, 28, 12" CvTextArgument="New" CvType="Button" DesignTimeRectangle="1843, 294, 58, 30" ElementType="Text" FriendlyName="'New'" FullSelectorArgument="&lt;webctrl aria-role='button' tag='A' aaname='New' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='A' aaname='New' type='' class='forceActionLink' check:text='New' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NCheckState.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NCheckState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'New'" sap:VirtualizedContainerService.HintSize="1046,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Default_Team__c/list?filterName=__Recent" CvElementArea="1840, 291, 65, 36" CvTextArea="1858, 303, 28, 12" CvTextArgument="New" CvType="Button" DesignTimeRectangle="1843, 294, 58, 30" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'New'" FullSelectorArgument="&lt;webctrl aria-role='button' tag='A' aaname='New' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='A' aaname='New' type='' class='forceActionLink' check:text='New' /&gt;" Guid="c1f08ace-04a0-4112-95f3-2d62db1d7079" InformativeScreenshot="ec21d92a4e1d29e5597ac63f568ef69a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recently Viewed | Default Teams | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="76, 293, 82, 13" CvTextArgument="Default Teams" CvType="Text" DesignTimeRectangle="77, 291, 85, 17" ElementType="Text" FriendlyName="'Default Teams'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/forceObjectHomeDesktop/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/lstBreadcrumbs:breadCrumbs' tag='LST-BREADCRUMBS' /&gt;&lt;webctrl tag='SPAN' aaname='Default Teams' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/forceObjectHomeDesktop/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/lstBreadcrumbs:breadCrumbs' tag='LST-BREADCRUMBS' /&gt;&lt;webctrl tag='SPAN' aaname='Default Teams' type='' class='slds-var-p-right_x-small' check:text='Default Teams' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NCheckState DisplayName="Check App State 'New Default'" sap:VirtualizedContainerService.HintSize="1046,52" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Timeout="5" Version="V3">
+                                      <uix:NCheckState.IfExists>
+                                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,274" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[current.Sheet(&quot;Default team&quot;).Cell(&quot;O3&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[&quot;Pass&quot;]" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfExists>
+                                      <uix:NCheckState.IfNotExists>
+                                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,274" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[current.Sheet(&quot;Default team&quot;).Cell(&quot;O8&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[&quot;Fail&quot;]" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfNotExists>
+                                      <uix:NCheckState.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Default_Team__c/new?count=3&amp;nooverride=1&amp;useRecordTypeCheck=1&amp;navigationLocation=LIST_VIEW&amp;uid=171595677898533445&amp;backgroundContext=%2Flightning%2Fo%2FDefault_Team__c%2Flist%3FfilterName%3D__Recent&amp;recordTypeId=01256000003E4ToAAK&amp;navigationLocationId=Recent" DesignTimeRectangle="493, 277, 950, 601" DesignTimeScaleFactor="1" FriendlyName="'New Default'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl tag='DIV' type='' class='record-page-decorator has-footer' aaname='' check:text='New Default Team: AELLC Default Team Record Type* = Required InformationInformation*Sales' /&gt;" Guid="fc200c60-c619-47ef-898d-a54fee82704e" InformativeScreenshot="7efe4644b516a5d09cd41ad14d686696.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Default Team: AELLC Default Team Record Type | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="738, 298, 460, 22" CvTextArgument="New Default Team: AELLC Default Team Record Type" CvType="Text" DesignTimeRectangle="509, 293, 918, 25" ElementType="Text" FriendlyName="'New Default'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl tag='H2' aaname='New Default Team: AELLC Default Team Record Type' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl tag='H2' aaname='New Default Team: AELLC Default Team Record Type' type='' class='header slds-modal__title slds-hyphenate slds-text-heading_medium' check:text='New Default Team: AELLC Default Team Record Type' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NCheckState.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NCheckState>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '*Sales Rep'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1046,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Default_Team__c/new?count=3&amp;nooverride=1&amp;useRecordTypeCheck=1&amp;navigationLocation=LIST_VIEW&amp;uid=171595677898533445&amp;backgroundContext=%2Flightning%2Fo%2FDefault_Team__c%2Flist%3FfilterName%3D__Recent&amp;recordTypeId=01256000003E4ToAAK&amp;navigationLocationId=Recent" CvTextArea="676, 452, 90, 15" CvTextArgument="Search People..." CvType="Text" DesignTimeRectangle="663, 443, 289, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT combobox-input-614'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl tag='INPUT' aaname='*Sales Rep' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl tag='INPUT' aaname='*Sales Rep' type='text' class='slds-combobox__input slds-input' /&gt;" Guid="3cdae238-6bc2-4437-a668-229cda11e495" InformativeScreenshot="0cfb52c86d9bfa1b51a977ef377504a8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Default Team: AELLC Default Team Record Type | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="529, 449, 52, 15" CvTextArgument="Sales Rep" CvType="Text" DesignTimeRectangle="521, 443, 67, 20" ElementType="Text" FriendlyName="'*Sales Rep'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl tag='LABEL' aaname='Sales Rep' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl tag='LABEL' aaname='Sales Rep' type='' class='slds-form-element__label' check:text='*Sales Rep' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.Text>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <Literal x:TypeArguments="x:String" Value="" />
+                                        </InArgument>
+                                      </uix:NTypeInto.Text>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '*Team Member'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1046,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Default_Team__c/new?count=3&amp;nooverride=1&amp;useRecordTypeCheck=1&amp;navigationLocation=LIST_VIEW&amp;uid=171595677898533445&amp;backgroundContext=%2Flightning%2Fo%2FDefault_Team__c%2Flist%3FfilterName%3D__Recent&amp;recordTypeId=01256000003E4ToAAK&amp;navigationLocationId=Recent" CvTextArea="1138, 452, 91, 15" CvTextArgument="Search People..." CvType="Text" DesignTimeRectangle="1126, 443, 289, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT combobox-input-622'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='*Team Member' aria-role='combobox' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='*Team Member' aria-role='combobox' tag='INPUT' type='text' class='slds-combobox__input slds-input' /&gt;" Guid="37eb9611-d114-4e3b-8c00-936dc5e5213b" InformativeScreenshot="8fab73e78e5512409bfdd09eb7352935.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Default Team: AELLC Default Team Record Type | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="992, 449, 78, 12" CvTextArgument="Team Member" CvType="Text" DesignTimeRectangle="984, 443, 93, 20" ElementType="Text" FriendlyName="'*Team Member'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='Team Member' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='Team Member' tag='LABEL' type='' class='slds-form-element__label' check:text='*Team Member' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.Text>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <Literal x:TypeArguments="x:String" Value="" />
+                                        </InArgument>
+                                      </uix:NTypeInto.Text>
+                                    </uix:NTypeInto>
+                                    <uix:NSelectItem DisplayName="Select Item '--None--'" sap:VirtualizedContainerService.HintSize="1046,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NSelectItem.Item>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <Literal x:TypeArguments="x:String" Value="" />
+                                        </InArgument>
+                                      </uix:NSelectItem.Item>
+                                      <uix:NSelectItem.Items>
+                                        <scg:List x:TypeArguments="x:String" Capacity="3">
+                                          <x:String>--None--</x:String>
+                                          <x:String>Yes</x:String>
+                                          <x:String>No</x:String>
+                                        </scg:List>
+                                      </uix:NSelectItem.Items>
+                                      <uix:NSelectItem.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Default_Team__c/new?count=3&amp;nooverride=1&amp;useRecordTypeCheck=1&amp;navigationLocation=LIST_VIEW&amp;uid=171595677898533445&amp;backgroundContext=%2Flightning%2Fo%2FDefault_Team__c%2Flist%3FfilterName%3D__Recent&amp;recordTypeId=01256000003E4ToAAK&amp;navigationLocationId=Recent" CvTextArea="676, 515, 52, 12" CvTextArgument="--None--" CvType="Text" DesignTimeRectangle="663, 505, 289, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'--None--'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl tag='BUTTON' aaname='--None--' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl tag='BUTTON' aaname='--None--' type='button' class='slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value' check:text='--None--' /&gt;" Guid="fca1a850-84c4-491c-a0b4-18f81f542d7e" InformativeScreenshot="b86cc5bc175d3c09ff602cb33ce0b6f0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Default Team: AELLC Default Team Record Type | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="520, 511, 53, 15" CvTextArgument="Is Primary" CvType="Text" DesignTimeRectangle="521, 505, 60, 20" ElementType="Text" FriendlyName="'Is Primary'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='Is Primary' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='Is Primary' tag='LABEL' type='' class='slds-form-element__label' check:text='Is Primary' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NSelectItem.Target>
+                                    </uix:NSelectItem>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '*BG Definition'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1046,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Default_Team__c/new?count=3&amp;nooverride=1&amp;useRecordTypeCheck=1&amp;navigationLocation=LIST_VIEW&amp;uid=171595677898533445&amp;backgroundContext=%2Flightning%2Fo%2FDefault_Team__c%2Flist%3FfilterName%3D__Recent&amp;recordTypeId=01256000003E4ToAAK&amp;navigationLocationId=Recent" CvTextArea="1138, 514, 206, 13" CvTextArgument="Search Business Group Definitions..." CvType="Text" DesignTimeRectangle="1126, 502, 289, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT combobox-input-630'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='*BG Definition' aria-role='combobox' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='*BG Definition' aria-role='combobox' tag='INPUT' type='text' class='slds-combobox__input slds-input' /&gt;" Guid="5cdac9e2-5e6f-4fc8-90eb-5dbae745228c" InformativeScreenshot="db70c90be15d1f3760bbe22160713a9f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Default Team: AELLC Default Team Record Type | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="985, 511, 79, 12" CvTextArgument="* BG Definition" CvType="Text" DesignTimeRectangle="984, 502, 87, 20" ElementType="Text" FriendlyName="'*BG Definition'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='BG Definition' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='BG Definition' tag='LABEL' type='' class='slds-form-element__label' check:text='*BG Definition' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.Text>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <Literal x:TypeArguments="x:String" Value="" />
+                                        </InArgument>
+                                      </uix:NTypeInto.Text>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '*Valid From'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1046,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Default_Team__c/new?count=4&amp;nooverride=1&amp;useRecordTypeCheck=1&amp;navigationLocation=LIST_VIEW&amp;uid=171596088983148023&amp;backgroundContext=%2Flightning%2Fo%2FDefault_Team__c%2Flist%3FfilterName%3D__Recent&amp;recordTypeId=01256000003E4ToAAK&amp;navigationLocationId=Recent" DesignTimeRectangle="663, 549, 289, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT input-728'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl class='slds-input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl class='slds-input' tag='INPUT' type='text' aaname='*Valid From' /&gt;" Guid="bb9a6ae2-015f-409c-bb6e-2e19c0725707" InformativeScreenshot="394696b4fb35c5e3d87da7acfc306cff.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Default Team: AELLC Default Team Record Type | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="522, 555, 64, 12" CvTextArgument="* Valid From" CvType="Text" DesignTimeRectangle="521, 549, 73, 20" ElementType="Text" FriendlyName="'*Valid From'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='Valid From' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='Valid From' tag='LABEL' type='' class='slds-form-element__label' check:text='*Valid From' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.Text>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <Literal x:TypeArguments="x:String" Value="" />
+                                        </InArgument>
+                                      </uix:NTypeInto.Text>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Valid To'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1046,218" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Default_Team__c/new?count=4&amp;nooverride=1&amp;useRecordTypeCheck=1&amp;navigationLocation=LIST_VIEW&amp;uid=171596088983148023&amp;backgroundContext=%2Flightning%2Fo%2FDefault_Team__c%2Flist%3FfilterName%3D__Recent&amp;recordTypeId=01256000003E4ToAAK&amp;navigationLocationId=Recent" DesignTimeRectangle="1126, 563, 289, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT input-748'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='Valid To' class='slds-input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='Valid To' class='slds-input' tag='INPUT' type='text' /&gt;" Guid="dbecb126-9eb9-4fac-8a8d-3131f005f25e" InformativeScreenshot="ba46ccb2578af00db15f80fc97e4ca4f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Default Team: AELLC Default Team Record Type | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="982, 569, 43, 12" CvTextArgument="Valid To" CvType="Text" DesignTimeRectangle="984, 563, 49, 20" ElementType="Text" FriendlyName="'Valid To'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='Valid To' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='Valid To' tag='LABEL' type='' class='slds-form-element__label' check:innerText='Valid To' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.Text>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <Literal x:TypeArguments="x:String" Value="" />
+                                        </InArgument>
+                                      </uix:NTypeInto.Text>
+                                    </uix:NTypeInto>
+                                    <uix:NSelectItem DisplayName="Select Item '--None--'" sap:VirtualizedContainerService.HintSize="1046,157" sap2010:WorkflowViewState.IdRef="NSelectItem_2" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NSelectItem.Item>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <Literal x:TypeArguments="x:String" Value="" />
+                                        </InArgument>
+                                      </uix:NSelectItem.Item>
+                                      <uix:NSelectItem.Items>
+                                        <scg:List x:TypeArguments="x:String" Capacity="14">
+                                          <x:String>--None--</x:String>
+                                          <x:String>Estimator</x:String>
+                                          <x:String>Owner</x:String>
+                                          <x:String>Project Captain</x:String>
+                                          <x:String>Chief Estimator</x:String>
+                                          <x:String>Sales Rep</x:String>
+                                          <x:String>Implementer</x:String>
+                                          <x:String>Monitor evaluator</x:String>
+                                          <x:String>Coordinator</x:String>
+                                          <x:String>Follow Up Manager</x:String>
+                                          <x:String>Pre Sales Consultant</x:String>
+                                          <x:String>Sales Manager</x:String>
+                                          <x:String>Sales Assistant</x:String>
+                                          <x:String>Account Manager</x:String>
+                                        </scg:List>
+                                      </uix:NSelectItem.Items>
+                                      <uix:NSelectItem.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Default_Team__c/new?count=4&amp;nooverride=1&amp;useRecordTypeCheck=1&amp;navigationLocation=LIST_VIEW&amp;uid=171596088983148023&amp;backgroundContext=%2Flightning%2Fo%2FDefault_Team__c%2Flist%3FfilterName%3D__Recent&amp;recordTypeId=01256000003E4ToAAK&amp;navigationLocationId=Recent" CvTextArea="676, 603, 52, 12" CvTextArgument="--None--" CvType="Text" DesignTimeRectangle="663, 584, 289, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'--None--'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aria-label='Team Role' aria-role='combobox' tag='BUTTON' aaname='--None--' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aria-label='Team Role' aria-role='combobox' tag='BUTTON' aaname='--None--' type='button' class='slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value' check:text='--None--' /&gt;" Guid="d422feb6-4e4e-4784-b48a-f7573206dd5d" InformativeScreenshot="09320c94f354c9164c1cb671758a115d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Default Team: AELLC Default Team Record Type | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="528, 599, 57, 12" CvTextArgument="Team Role" CvType="Text" DesignTimeRectangle="521, 584, 71, 20" ElementType="Text" FriendlyName="'*Team Role'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='Team Role' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='Team Role' tag='LABEL' type='' class='slds-form-element__label' check:text='*Team Role' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NSelectItem.Target>
+                                    </uix:NSelectItem>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="1046,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Default_Team__c/new?count=4&amp;nooverride=1&amp;useRecordTypeCheck=1&amp;navigationLocation=LIST_VIEW&amp;uid=171596088983148023&amp;backgroundContext=%2Flightning%2Fo%2FDefault_Team__c%2Flist%3FfilterName%3D__Recent&amp;recordTypeId=01256000003E4ToAAK&amp;navigationLocationId=Recent" CvElementArea="1028, 838, 63, 35" CvTextArea="1045, 849, 29, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1030, 839, 61, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='Save' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl aaname='Save' tag='BUTTON' type='button' class='slds-button slds-button_brand' check:text='Save' /&gt;" Guid="57c78306-b941-4996-8ba9-9159949c374f" InformativeScreenshot="da1ec04b439c98a23bfeebf995ccc3cc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Default Team: AELLC Default Team Record Type | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="738, 289, 460, 22" CvTextArgument="New Default Team: AELLC Default Team Record Type" CvType="Text" DesignTimeRectangle="509, 284, 918, 25" ElementType="Text" FriendlyName="'New Default'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl tag='H2' aaname='New Default Team: AELLC Default Team Record Type' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl tag='H2' aaname='New Default Team: AELLC Default Team Record Type' type='' class='header slds-modal__title slds-hyphenate slds-text-heading_medium' check:text='New Default Team: AELLC Default Team Record Type' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NCheckState DisplayName="Check App State 'We hit a snag.'" sap:VirtualizedContainerService.HintSize="1046,690" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="5c914b17-bf56-47a6-b06f-7ce746f2862e" Timeout="5" Version="V3">
+                                      <uix:NCheckState.IfExists>
+                                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,473" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Default team&quot;).Cell(&quot;O9&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[&quot;Pass&quot;]" />
+                                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Default team&quot;).Cell(&quot;O10&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[&quot;Pass&quot;]" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfExists>
+                                      <uix:NCheckState.IfNotExists>
+                                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,473" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Default team&quot;).Cell(&quot;O4&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[&quot;Pass&quot;]" />
+                                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Default team&quot;).Cell(&quot;O5&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[&quot;Pass&quot;]" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfNotExists>
+                                      <uix:NCheckState.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aellc--uat.sandbox.lightning.force.com/lightning/o/Default_Team__c/new?count=4&amp;nooverride=1&amp;useRecordTypeCheck=1&amp;navigationLocation=LIST_VIEW&amp;uid=171596088983148023&amp;backgroundContext=%2Flightning%2Fo%2FDefault_Team__c%2Flist%3FfilterName%3D__Recent&amp;recordTypeId=01256000003E4ToAAK&amp;navigationLocationId=Recent" CvTextArea="718, 686, 126, 21" CvTextArgument="We hit a snag." CvType="Text" DesignTimeRectangle="720, 681, 256, 25" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'We hit a snag.'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/lightningOverlayInteropWrapper' tag='RECORDS-RECORD-EDIT-ERROR-HEADER' /&gt;&lt;webctrl tag='H2' aaname='We hit a snag.' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/lightningOverlayInteropWrapper' tag='RECORDS-RECORD-EDIT-ERROR-HEADER' /&gt;&lt;webctrl tag='H2' aaname='We hit a snag.' type='' class='slds-truncate slds-text-heading_medium' check:text='We hit a snag.' /&gt;" Guid="4e018180-60f8-4173-8d2e-f9736610bb91" InformativeScreenshot="283b56740be6b0c28d56aa37ab6b62d1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Default Team: AELLC Default Team Record Type | Salesforce' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArea="738, 280, 460, 22" CvTextArgument="New Default Team: AELLC Default Team Record Type" CvType="Text" DesignTimeRectangle="509, 275, 918, 25" ElementType="Text" FriendlyName="'New Default'" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl tag='H2' aaname='New Default Team: AELLC Default Team Record Type' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceModal/lafPageHost/oneRecordActionWrapper/oneRecordActionFlexipageWrapper/auraIf/auraIf/auraIf/oneRecordActionFlexipage' tag='ONE-RECORD-ACTION-FLEXIPAGE' /&gt;&lt;webctrl tag='H2' aaname='New Default Team: AELLC Default Team Record Type' type='' class='header slds-modal__title slds-hyphenate slds-text-heading_medium' check:text='New Default Team: AELLC Default Team Record Type' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NCheckState.Target>
+                                    </uix:NCheckState>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVFhH7ZZBSBRRGMdHYolFJCJEJEQkJERCPISHCAlP0qGT5w7RwUNIhESEiAfxGJ46ONIpwmOIiHiQiAiRiOgUb6JTePLQIUQ6TL//25ndt85jXGmc7eDht2/3zbfv+79vvu+9L4jjuKOdnAv4fwUEq+ZCsBp1wmW4BFXN+Wz/hYwAHMkxDs0I431YgHl+TzHe0LNmu6gfrkEfNl1BGJ1KZJOA2q7NAIs9hm8QNzB/GL/CDAzCTZiFDfgMb+ERjEKnu24exwREPfASHMcZDhDzjvHLsfmUXbgHen1d0JugaGWiUxfAw4ssTJjNId99C58GCXwA0/CCNcFG7jawyUYuuQKUbOvgW7AoDCzCdbAiXAEKP+H1/rFoXkG/T8DvxKAMnkHFFXAFlM0+4+IJ7evotQKUFPxQaX2oG5TD3USADf8y/EoelMWTgA8dPiqXI+dBWcxIAPUffXImy2RcAqokRDt2/wO/3Qgw3HJeg7PmKVTSV/AzmSwJ84axzxYAXyqgCvAYFo35zrgEw+m1nZbhMHysGRVIaHS3vMbxCuNzmASVfPNlpAm4hSHGBd0Hob3YuP2MDjj1GDpp865jexqqs5kAdUJSvAd+Bw32YQt2QD3Ce5gDdVRV15mPuoD6hKIRqv+jRGp3+kn9gRJqDIZATvU6vbv1kRHgwiLqZLSbbJXUzo5NGIeK7/+tkC+ATCWR1KjcAXU126BkXYOHoPd7YpjzyBWQghOVqsJ6FVF0vzaT1fO1FOY8WhJwlpwLaLOAuOMveA1Of+TuOKQAAAAASUVORK5CYII=" InformativeScreenshot="dd4b2aa49328201ec5697fba4dd8a862.jpg" Selector="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" Title="Home | Salesforce" Url="https://aellc--uat.sandbox.lightning.force.com/lightning/page/home" />
+                              </uix:NApplicationCard.TargetApp>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>

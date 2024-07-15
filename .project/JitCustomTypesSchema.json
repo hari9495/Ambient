@@ -1,0 +1,744 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "RotJtK8QO6sxSFIi6yXJ/MW3olHmVHBnB0MBu9EYBlnfk6TUcJ2q0/sytjX8OkWQ8SrGEfudD1R3Fg+G/qfpTw==",
+        "bundleName": "Cdb3166c8ff0b421da4862a1794307bdf_curated_account",
+        "entitiesBundle": {
+          "Types": {
+            "curated_account": {
+              "name": "curated_account",
+              "properties": [
+                {
+                  "name": "AccountNumber",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "AccountSource",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingCity",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingCountry",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingPostalCode",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingStreet",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Description",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Id",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Industry",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Name",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "OwnerId",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Ownership",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Phone",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Type",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Website",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Account_Hold_Reason__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Account_Market_Category__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Account_Market_Segment__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Account_Notes__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Account_Number_1__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Account_Sub_Type__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Account_on_Hold__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Actual_Cost_Lifetime_AP__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Actual_Cost_YTD_AP__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Actual_Revenue_Lifetime__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Actual_Revenue_YTD_AR__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "AnnualRevenue",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingAddress_city",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingAddress_country",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingAddress_geocodeAccuracy",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingAddress_latitude",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingAddress_longitude",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingAddress_postalCode",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingAddress_state",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingAddress_street",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingGeocodeAccuracy",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingLatitude",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingLongitude",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "BillingState",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "CreatedById",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "CreatedDate",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Credit_Limit__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Est_Cost_Lifetime_AP__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Est_Cost_YTD_AP__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Est_Revenue_LIfetime__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Est_Revenue_YTD_AR__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Fax",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "IsDeleted",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Is_Active__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Is_Legacy_Data__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Is_Tax_Exempt__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Jigsaw",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "JigsawCompanyId",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "LastActivityDate",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "LastModifiedById",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "LastModifiedDate",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "LastReferencedDate",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "LastViewedDate",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Legacy_Account_Number__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "MasterRecordId",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "NumberOfEmployees",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Int64, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Open_Balance_Lifetime_AP__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Open_Balance_Lifetime_AR__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Open_Balance_YTD_AP__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Open_Balance_YTD_AR__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "OperatingHoursId",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Ordered_Cost_YTD_AP__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Ordered_Revenue_Lifetime_AP__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Ordered_Revenue_Lifetime_AR__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Ordered_Revenue_YTD_AR__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ParentId",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Payment_Term__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "PhotoUrl",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Proposal_Exclusion__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Rating",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Realized_Cost_Lifetime_AP__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Realized_Cost_YTD_AP__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Realized_Revenue_Lifetime_AR__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Realized_Revenue_YTD_AR__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "SBQQ__AssetQuantitiesCombined__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "SBQQ__CoTermedContractsCombined__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "SBQQ__CoTerminationEvent__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "SBQQ__ContractCoTermination__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "SBQQ__DefaultOpportunity__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "SBQQ__IgnoreParentContractedPrices__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "SBQQ__PreserveBundle__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "SBQQ__PriceHoldEnd__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "SBQQ__RenewalModel__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "SBQQ__RenewalPricingMethod__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "SBQQ__TaxExempt__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "SF_Account_Number__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingAddress_city",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingAddress_country",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingAddress_geocodeAccuracy",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingAddress_latitude",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingAddress_longitude",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingAddress_postalCode",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingAddress_state",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingAddress_street",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingCity",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingCountry",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingGeocodeAccuracy",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingLatitude",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingLongitude",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingPostalCode",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingState",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ShippingStreet",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Sic",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "SicDesc",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Site",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "SystemModstamp",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Tax_ID__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Tax_Jurisdiction__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "TickerSymbol",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "X_BC_Account_ID__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "add_Member__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "rh2__Describe__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "rh2__testCurrency__c",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Single, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "sf_integration_status_id__c",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": {}
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.Salesforce.IntegrationService.Activities.SWEntities.Cdb3166c8ff0b421da4862a1794307bdf_curated_account",
+        "hash": "Um90SnRLOFFPNnN4U0ZJaTZ5WEovTVczb2xIbVZIQm5CME1CdTlFWUJsbmZrNlRVY0oycTAvc3l0alg4T2tXUThTckdFZnVkRDFSM0ZnK0cvcWZwVHc9PQ",
+        "assemblyName": "Cdb3166c8ff0b421da48.UB5UC4jyFlP1OXS8h2e8eWz1"
+      }
+    }
+  ]
+}
